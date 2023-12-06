@@ -45,8 +45,23 @@
         </nav>
       </div>
       <div class="flex justify-end items-baseline px-[20px]">
-        <button class="bi bi-cart text-[30px] mr-[10px]"></button>
-        <button class="fa fa-bars text-[26px]" id="open-button"></button>
+        <div
+          class="fixed bottom-[50px] z-10 rounded-full w-[60px] h-[60px] text-center shadow-lg leading-[60px] bg-white"
+        >
+          <button
+            class="bi bi-cart text-[30px] text-[#f79007] mr-0 relative h-[40px]"
+          >
+            <span
+              class="absolute top-[15px] start-100 translate-middle badge rounded-pill bg-danger !text-[10px]"
+            >
+              2
+            </span>
+          </button>
+        </div>
+        <button
+          class="fa fa-bars text-[30px] mt-[20px]"
+          id="open-button"
+        ></button>
       </div>
     </header>
     <section>
@@ -64,21 +79,193 @@
       </div>
     </section>
     <section>
-      <div class="card">
-        <i class="fa-regular fa-clock" style="font-size: 80px; color: #ddd"></i>
-      </div>
-      <!-- <div class="card">
+      <div
+        class="flex justify-start items-center mt-[30px] drop-shadow-lg w-[90vw] px-[30px]"
+      >
         <i
-          class="fa-regular fa-envelope"
-          style="font-size: 80px; color: #ddd"
+          class="fa-regular fa-clock mr-[30px]"
+          style="font-size: 100px; color: #ddd"
         ></i>
+        <div>
+          <p class="text-[30px] text-[#666]">Operating Hours</p>
+          <p class="mb-0 text-[#999]">Mon – Sat</p>
+          <p class="mb-0 text-[#999]">10:30 – 17:30</p>
+        </div>
       </div>
-      <div class="card">
-        <i class="fa-solid fa-phone" style="font-size: 70px; color: #ddd"
+      <div
+        class="flex justify-start items-center mt-[30px] drop-shadow-lg w-[90vw] px-[30px]"
+      >
+        <i
+          class="fa-solid fa-location-dot ml-[15px] mr-[35px]"
+          style="font-size: 100px; color: #ddd"
         ></i>
-        </svg>
-      </div> -->
+        <div>
+          <p class="text-[30px] text-[#666]">Locaction</p>
+          <p class="mb-0 text-[#999]">
+            Marjan Island Blvd – Jazeerat Al Marjan – Ras al Khaimah – United
+            Arab Emirates
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex justify-start items-center mt-[30px] drop-shadow-lg w-[90vw] p-[20px]"
+      >
+        <i
+          class="fa-solid fa-phone ml-[15px] mr-[30px]"
+          style="font-size: 85px; color: #ddd"
+        ></i>
+        <div>
+          <p class="text-[30px] text-[#666]">Contact Us</p>
+          <p class="mb-0 text-[#999]">+971 52 380 2308</p>
+          <p class="mb-0 text-[#999]">info@watersportstenerife.com</p>
+        </div>
+      </div>
     </section>
+    <article class="mt-[50px] card mx-[20px]">
+      <div
+        class="bg-[url(/images/1000x650-132.jpg)] h-[60vw] bg-cover rounded-t-[5px]"
+      ></div>
+      <p class="mt-[10px] text-[24px] font-bold px-[20px] text-[#666]">
+        Unbeatable Holiday Destination
+      </p>
+      <p class="text-[#f79007] opacity-50 px-[20px]">
+        <i class="fa-regular fa-clock"></i> July 22, 2021
+      </p>
+      <p class="px-[20px] text-[#999]">
+        Step into a world where exhilaration meets relaxation. At Fly Fish, we
+        redefine the essence of water adventures. Dive into the splendor of
+        pristine waters, and let our diverse range of water sports invigorate
+        your senses. From the heart-pounding thrills of jet skiing to the serene
+        drifts on our sailboats, there’s an experience tailored for everyone.
+      </p>
+      <p
+        class="px-[20px] text-[12px] text-right cursor-pointer hover:text-[#f79007] transition-all"
+      >
+        Read more <i class="fa-solid fa-arrow-right ml-2"></i>
+      </p>
+    </article>
+    <section class="mt-[50px]">
+      <h1 class="font-bold text-center text-[60px] mb-[30px]">Gallery</h1>
+      <div class="md:flex">
+        <div
+          class="bg-[url(/images/Kayaking-1.jpg)] h-[60vw] bg-cover md:min-w-[60vw] md:bg-center"
+        ></div>
+        <div class="p-[20px] text-center">
+          <h1 class="md:text-left">
+            Serenity on the Water: The Ultimate Kayak Escape
+          </h1>
+          <p class="md:text-left">
+            Glide over the pristine turquoise waters, let nature’s tranquility
+            embrace you, and escape from the mundane. Your peaceful getaway
+            awaits.
+          </p>
+        </div>
+      </div>
+      <div class="md:flex md:flex-row-reverse">
+        <div
+          class="bg-[url(/images/21db62_7054fbd3046a47658a73d5af7803084emv2.webp)] h-[60vw] bg-cover md:min-w-[60vw] md:bg-center"
+        ></div>
+        <div class="p-[20px] text-center">
+          <h1 class="md:text-right">
+            Group Thrills on the Waves: Unforgettable Moments Await!
+          </h1>
+          <p class="md:text-right">
+            Whether with family or friends, experience the exhilarating rush
+            together. Laughter, splashes, and shared memories guaranteed.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="md:mt-[100px]">
+      <h1 class="font-bold text-center text-[60px] mb-[30px]">Service</h1>
+      <div class="px-[20px] flex justify-between flex-wrap">
+        <div class="w-[45vw] mb-[2vw] md:w-[31vw]">
+          <div
+            class="bg-[url(/images/water-sport.jpg)] h-[40vw] md:h-[30vw] bg-cover bg-center flex flex-col justify-between p-[10px]"
+          >
+            <p class="text-white font-bold text-[5vw] md:text-[3vw]">Jet Ski</p>
+            <div class="text-right">
+              <button class="bg-[#f79007] text-white w-[100px] rounded-full">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-[45vw] mb-[2vw] md:w-[31vw]">
+          <div
+            class="bg-[url(/images/Windsurfing.jpg)] h-[40vw] md:h-[30vw] bg-cover bg-center flex flex-col justify-between p-[10px]"
+          >
+            <p class="text-white font-bold text-[5vw] md:text-[3vw]">
+              Windsurfing
+            </p>
+            <div class="text-right">
+              <button class="bg-[#f79007] text-white w-[100px] rounded-full">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-[45vw] mb-[2vw] md:w-[31vw]">
+          <div
+            class="bg-[url(/images/Batam-water-sports-Turi-Beach-Resort-via-Facebook.jpg)] h-[40vw] md:h-[30vw] bg-cover bg-center flex flex-col justify-between p-[10px]"
+          >
+            <p class="text-white font-bold text-[5vw] md:text-[3vw]">
+              Flyboard
+            </p>
+            <div class="text-right">
+              <button class="bg-[#f79007] text-white w-[100px] rounded-full">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-[45vw] mb-[2vw] md:w-[31vw]">
+          <div
+            class="bg-[url(/images/aquatrikes-couple.jpg)] h-[40vw] md:h-[30vw] bg-cover bg-center flex flex-col justify-between p-[10px]"
+          >
+            <p class="text-white font-bold text-[5vw] md:text-[3vw]">
+              Aquatrikes
+            </p>
+            <div class="text-right">
+              <button class="bg-[#f79007] text-white w-[100px] rounded-full">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-[45vw] mb-[2vw] md:w-[31vw]">
+          <div
+            class="bg-[url(/images/609cca7b624c2173_bbr.jpg)] h-[40vw] md:h-[30vw] bg-cover bg-center flex flex-col justify-between p-[10px]"
+          >
+            <p class="text-white font-bold text-[5vw] md:text-[3vw]">
+              Banana Boat
+            </p>
+            <div class="text-right">
+              <button class="bg-[#f79007] text-white w-[100px] rounded-full">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-[45vw] mb-[2vw] md:w-[31vw]">
+          <div
+            class="bg-[url(/images/63d1baf79ce0eb16e7687fef_parasailing-in-star-island_1e49178245a6fdf615ad37e555e35466_1000.jpeg)] h-[40vw] md:h-[30vw] bg-cover bg-center flex flex-col justify-between p-[10px]"
+          >
+            <p class="text-white font-bold text-[5vw] md:text-[3vw]">
+              Parasailing
+            </p>
+            <div class="text-right">
+              <button class="bg-[#f79007] text-white w-[100px] rounded-full">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center text-[12px] leading-snug">
+      © 2010-2023 Fly Fish Water Sports Resort. All rights reserved.
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
