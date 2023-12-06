@@ -28,8 +28,20 @@
   </head>
   <body>
     <header
-      class="h-[30vw] bg-[url(/images/photo_2023-10-27_20-33-58.png)] bg-center bg-contain"
+      class="h-[30vw] bg-[url(/images/photo_2023-10-27_20-33-58.png)] bg-center bg-contain md:bg-none md:h-[50px]"
     >
+      <div class="hidden md:h-[50px] md:flex justify-between">
+        <img src="492cb16ad2bf51756a17.png" class="" alt="" srcset="" />
+        <nav class="text-[#333] leading-[50px] px-[20px]">
+          <a class="ml-[10px]" href="/index.html" class="active"
+            ><span>Home</span></a
+          >
+          <a class="ml-[10px]" href="#"><span>Overview</span></a>
+          <a class="ml-[10px]" href="/about.html"><span>About Us</span></a>
+          <a class="ml-[10px]" href="#"><span>Contact Us</span></a>
+          <a class="ml-[10px]" href="#"><span>Login / Register</span></a>
+        </nav>
+      </div>
       <div
         class="menu-wrap fixed right-0 z-20 w-[300px] h-full p-[40px] bg-[#222]"
       >
@@ -59,18 +71,22 @@
           </button>
         </div>
         <button
-          class="fa fa-bars text-[30px] mt-[20px]"
+          class="fa fa-bars text-[30px] mt-[20px] md:hidden"
           id="open-button"
         ></button>
       </div>
     </header>
     <section>
       <div
-        class="h-[60vw] bg-cover relative flex flex-col items-center justify-center text-white bg-[url(/images/KB22312.jpg)]"
+        class="h-[60vw] bg-cover relative flex flex-col items-center justify-center text-white bg-[url(/images/KB22312.jpg)] md:h-[40vw] md:bg-bottom"
       >
-        <div class="absolute w-full h-[60vw] bg-black opacity-30"></div>
-        <h1 class="text-[40px] text-bold z-10">Best Water Sports</h1>
-        <p class="z-10">Experience the Thrill of the Waves</p>
+        <div
+          class="absolute w-full h-[60vw] bg-black opacity-30 md:h-[40vw]"
+        ></div>
+        <h1 class="text-[40px] text-bold z-10 md:text-[7vw]">
+          Best Water Sports
+        </h1>
+        <p class="z-10 md:text-[3vw]">Experience the Thrill of the Waves</p>
         <button
           class="z-10 leading-[50px] bg-[#f79007] hover:bg-white px-[10px] hover:text-[#666] transition-all"
         >
@@ -78,9 +94,9 @@
         </button>
       </div>
     </section>
-    <section>
+    <section class="lg:flex lg:justify-center lg:my-[100px]">
       <div
-        class="flex justify-start items-center mt-[30px] drop-shadow-lg w-[90vw] px-[30px]"
+        class="flex justify-start items-center mt-[30px] drop-shadow-lg w-[90vw] px-[30px] md:px-[30vw] md:w-full lg:w-[30vw] lg:px-0 lg:justify-center"
       >
         <i
           class="fa-regular fa-clock mr-[30px]"
@@ -93,7 +109,7 @@
         </div>
       </div>
       <div
-        class="flex justify-start items-center mt-[30px] drop-shadow-lg w-[90vw] px-[30px]"
+        class="flex justify-start items-center mt-[30px] drop-shadow-lg w-[90vw] px-[30px] md:px-[30vw] md:w-full lg:w-[30vw] lg:px-0 lg:justify-center"
       >
         <i
           class="fa-solid fa-location-dot ml-[15px] mr-[35px]"
@@ -108,7 +124,7 @@
         </div>
       </div>
       <div
-        class="flex justify-start items-center mt-[30px] drop-shadow-lg w-[90vw] p-[20px]"
+        class="flex justify-start items-center mt-[30px] drop-shadow-lg w-[90vw] p-[20px] md:px-[30vw] md:w-full lg:w-[30vw] lg:px-0 lg:justify-center"
       >
         <i
           class="fa-solid fa-phone ml-[15px] mr-[30px]"
@@ -121,40 +137,47 @@
         </div>
       </div>
     </section>
-    <article class="mt-[50px] card mx-[20px]">
+    <article
+      class="mt-[50px] card mx-[20px] lg:!flex-row lg:w-[70vw] lg:mx-auto"
+    >
       <div
-        class="bg-[url(/images/1000x650-132.jpg)] h-[60vw] bg-cover rounded-t-[5px]"
+        class="bg-[url(/images/1000x650-132.jpg)] h-[60vw] bg-cover rounded-t-[5px] lg:min-w-[40vw] lg:max-h-[700px] bg-center lg:rounded-tr-none lg:rounded-bl-[5px] bg-cover"
       ></div>
-      <p class="mt-[10px] text-[24px] font-bold px-[20px] text-[#666]">
-        Unbeatable Holiday Destination
-      </p>
-      <p class="text-[#f79007] opacity-50 px-[20px]">
-        <i class="fa-regular fa-clock"></i> July 22, 2021
-      </p>
-      <p class="px-[20px] text-[#999]">
-        Step into a world where exhilaration meets relaxation. At Fly Fish, we
-        redefine the essence of water adventures. Dive into the splendor of
-        pristine waters, and let our diverse range of water sports invigorate
-        your senses. From the heart-pounding thrills of jet skiing to the serene
-        drifts on our sailboats, there’s an experience tailored for everyone.
-      </p>
-      <p
-        class="px-[20px] text-[12px] text-right cursor-pointer hover:text-[#f79007] transition-all"
-      >
-        Read more <i class="fa-solid fa-arrow-right ml-2"></i>
-      </p>
+      <div>
+        <p
+          class="mt-[10px] text-[24px] font-bold px-[20px] text-[#666] md:text-[45px]"
+        >
+          Unbeatable Holiday Destination
+        </p>
+        <p class="text-[#f79007] opacity-50 px-[20px]">
+          <i class="fa-regular fa-clock"></i> July 22, 2023
+        </p>
+        <p class="px-[20px] text-[#999] md:text-[18px]">
+          Step into a world where exhilaration meets relaxation. At Fly Fish, we
+          redefine the essence of water adventures. Dive into the splendor of
+          pristine waters, and let our diverse range of water sports invigorate
+          your senses. From the heart-pounding thrills of jet skiing to the
+          serene drifts on our sailboats, there’s an experience tailored for
+          everyone.
+        </p>
+        <p
+          class="px-[20px] text-[12px] text-right cursor-pointer hover:text-[#f79007] transition-all"
+        >
+          Read more <i class="fa-solid fa-arrow-right ml-2"></i>
+        </p>
+      </div>
     </article>
     <section class="mt-[50px]">
       <h1 class="font-bold text-center text-[60px] mb-[30px]">Gallery</h1>
       <div class="md:flex">
         <div
-          class="bg-[url(/images/Kayaking-1.jpg)] h-[60vw] bg-cover md:min-w-[60vw] md:bg-center"
+          class="bg-[url(/images/Kayaking-1.jpg)] h-[60vw] bg-cover md:min-w-[60vw] md:bg-center lg:min-w-[50vw] lg:h-[40vw]"
         ></div>
         <div class="p-[20px] text-center">
-          <h1 class="md:text-left">
+          <h1 class="md:text-left lg:text-[5vw] font-bold">
             Serenity on the Water: The Ultimate Kayak Escape
           </h1>
-          <p class="md:text-left">
+          <p class="md:text-left lg:text-[2vw]">
             Glide over the pristine turquoise waters, let nature’s tranquility
             embrace you, and escape from the mundane. Your peaceful getaway
             awaits.
@@ -163,13 +186,13 @@
       </div>
       <div class="md:flex md:flex-row-reverse">
         <div
-          class="bg-[url(/images/21db62_7054fbd3046a47658a73d5af7803084emv2.webp)] h-[60vw] bg-cover md:min-w-[60vw] md:bg-center"
+          class="bg-[url(/images/21db62_7054fbd3046a47658a73d5af7803084emv2.webp)] h-[60vw] bg-cover md:min-w-[60vw] md:bg-center lg:min-w-[50vw] lg:h-[40vw]"
         ></div>
         <div class="p-[20px] text-center">
-          <h1 class="md:text-right">
+          <h1 class="md:text-right lg:text-[5vw] font-bold">
             Group Thrills on the Waves: Unforgettable Moments Await!
           </h1>
-          <p class="md:text-right">
+          <p class="md:text-right lg:text-[2vw]">
             Whether with family or friends, experience the exhilarating rush
             together. Laughter, splashes, and shared memories guaranteed.
           </p>
@@ -185,7 +208,9 @@
           >
             <p class="text-white font-bold text-[5vw] md:text-[3vw]">Jet Ski</p>
             <div class="text-right">
-              <button class="bg-[#f79007] text-white w-[100px] rounded-full">
+              <button
+                class="bg-[#f79007] text-white w-[100px] rounded-full lg:mr-[20px] lg:mb-[20px] lg:text-[20px] lg:py-[10px] lg:w-[150px]"
+              >
                 Book Now
               </button>
             </div>
@@ -199,7 +224,9 @@
               Windsurfing
             </p>
             <div class="text-right">
-              <button class="bg-[#f79007] text-white w-[100px] rounded-full">
+              <button
+                class="bg-[#f79007] text-white w-[100px] rounded-full lg:mr-[20px] lg:mb-[20px] lg:text-[20px] lg:py-[10px] lg:w-[150px]"
+              >
                 Book Now
               </button>
             </div>
@@ -213,7 +240,9 @@
               Flyboard
             </p>
             <div class="text-right">
-              <button class="bg-[#f79007] text-white w-[100px] rounded-full">
+              <button
+                class="bg-[#f79007] text-white w-[100px] rounded-full lg:mr-[20px] lg:mb-[20px] lg:text-[20px] lg:py-[10px] lg:w-[150px]"
+              >
                 Book Now
               </button>
             </div>
@@ -227,7 +256,9 @@
               Aquatrikes
             </p>
             <div class="text-right">
-              <button class="bg-[#f79007] text-white w-[100px] rounded-full">
+              <button
+                class="bg-[#f79007] text-white w-[100px] rounded-full lg:mr-[20px] lg:mb-[20px] lg:text-[20px] lg:py-[10px] lg:w-[150px]"
+              >
                 Book Now
               </button>
             </div>
@@ -241,7 +272,9 @@
               Banana Boat
             </p>
             <div class="text-right">
-              <button class="bg-[#f79007] text-white w-[100px] rounded-full">
+              <button
+                class="bg-[#f79007] text-white w-[100px] rounded-full lg:mr-[20px] lg:mb-[20px] lg:text-[20px] lg:py-[10px] lg:w-[150px]"
+              >
                 Book Now
               </button>
             </div>
@@ -255,7 +288,9 @@
               Parasailing
             </p>
             <div class="text-right">
-              <button class="bg-[#f79007] text-white w-[100px] rounded-full">
+              <button
+                class="bg-[#f79007] text-white w-[100px] rounded-full lg:mr-[20px] lg:mb-[20px] lg:text-[20px] lg:py-[10px] lg:w-[150px]"
+              >
                 Book Now
               </button>
             </div>
@@ -263,7 +298,9 @@
         </div>
       </div>
     </section>
-    <footer class="text-center text-[12px] leading-snug">
+    <footer
+      class="text-center text-[12px] leading-snug py-[30px] md:text-[16px]"
+    >
       © 2010-2023 Fly Fish Water Sports Resort. All rights reserved.
     </footer>
     <script
