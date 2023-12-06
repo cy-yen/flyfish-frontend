@@ -5,9 +5,180 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webpack App</title>
+    <link href="main.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .menu-wrap {
+        transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+        transform: translate3d(360px, 0, 0);
+      }
+      .menu-wrap.active {
+        transform: translate3d(0px, 0, 0);
+      }
+      .menu-wrap .menu .icon-list a {
+        position: relative;
+        font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif;
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        color: #eee;
+        font-size: 20px;
+        transition: all 0.3s ease;
+      }
+      .menu-wrap .menu .icon-list a::before {
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 2px;
+        top: 80%;
+        transition: all 0.3s ease;
+      }
+      .menu-wrap .menu .icon-list a.active {
+        color: #f79007;
+      }
+      .menu-wrap .menu .icon-list a.active::before {
+        width: 50%;
+        background-color: #f79007;
+      }
+      /* Buttons */
+      .close-button {
+        position: absolute;
+        top: 40px;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+      .close-button {
+        left: -50px;
+        z-index: 100;
+        background-color: #f79007;
+        color: #fff;
+      }
+    </style>
   </head>
   <body>
-    <h1 class="text-4xl text-blue-700">My Webpack + Tailwind App</h1>
+    <header
+      class="h-[30vw] bg-[url(/images/photo_2023-10-27_20-33-58.png)] bg-center bg-contain"
+    >
+      <div
+        class="menu-wrap fixed right-0 z-20 w-[300px] h-full p-[40px] bg-[#222]"
+      >
+        <nav class="menu">
+          <div class="icon-list">
+            <a href="/index.html" class="active"><span>Home</span></a>
+            <a href="#"><span>Overview</span></a>
+            <a href="/about.html"><span>About Us</span></a>
+            <a href="#"><span>Contact Us</span></a>
+            <a href="#"><span>Login / Register</span></a>
+          </div>
+          <button class="close-button fa fa-xmark" id="close-button"></button>
+        </nav>
+      </div>
+      <div class="flex justify-end items-baseline px-[20px]">
+        <button class="bi bi-cart text-[30px] mr-[10px]"></button>
+        <button class="fa fa-bars text-[26px]" id="open-button"></button>
+      </div>
+    </header>
+    <section>
+      <div
+        class="h-[60vw] bg-cover relative flex flex-col items-center justify-center text-white bg-[url(/images/KB22312.jpg)]"
+      >
+        <div class="absolute w-full h-[60vw] bg-black opacity-30"></div>
+        <h1 class="text-[40px] text-bold z-10">Best Water Sports</h1>
+        <p class="z-10">Experience the Thrill of the Waves</p>
+        <button
+          class="z-10 leading-[50px] bg-[#f79007] hover:bg-white px-[10px] hover:text-[#666] transition-all"
+        >
+          GET STARTED NOW
+        </button>
+      </div>
+    </section>
+    <section>
+      <div class="card">
+        <i class="fa-regular fa-clock" style="font-size: 80px; color: #ddd"></i>
+      </div>
+      <!-- <div class="card">
+        <i
+          class="fa-regular fa-envelope"
+          style="font-size: 80px; color: #ddd"
+        ></i>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-phone" style="font-size: 70px; color: #ddd"
+        ></i>
+        </svg>
+      </div> -->
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
     <script src="bundle.js"></script>
+    <script type="text/javascript">
+      (function ($) {
+        "use strict";
+        var openBtn = $("#open-button"),
+          colseBtn = $("#close-button"),
+          menu = $(".menu-wrap");
+        // Open menu when click on menu button
+        openBtn.on("click", function () {
+          menu.addClass("active");
+        });
+        // Close menu when click on Close button
+        colseBtn.on("click", function () {
+          menu.removeClass("active");
+        });
+
+        $(".menu-wrap a").on("click", function (e) {
+          console.log(e);
+        });
+        // Close menu when click on anywhere on the document
+        $(document).on("click", function (e) {
+          var target = $(e.target);
+          if (
+            target.is(
+              ".menu-wrap, .menu, .icon-list, .icon-list a, .icon-list a span, #open-button"
+            ) === false
+          ) {
+            menu.removeClass("active");
+            e.stopPropagation();
+          }
+        });
+      })(jQuery);
+    </script>
   </body>
 </html>
