@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webpack App</title>
+    <title>Fly Fish Water Sports</title>
     <link href="main.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -100,7 +100,7 @@
     </section>
     <section class="lg:flex lg:justify-center lg:my-[100px]">
       <div
-        class="flex justify-start items-center mt-[30px] drop-shadow-lg w-[90vw] px-[30px] md:px-[30vw] md:w-full lg:w-[30vw] lg:px-0 lg:justify-center"
+        class="flex justify-start items-center mt-[30px] drop-shadow-lg w-[90vw] px-[30px] md:px-[30vw] md:w-full lg:w-[30vw] lg:px-0 lg:justify-center slide-bottom"
       >
         <i
           class="fa-regular fa-clock mr-[30px]"
@@ -113,7 +113,7 @@
         </div>
       </div>
       <div
-        class="flex justify-start items-center mt-[30px] drop-shadow-lg w-[90vw] px-[30px] md:px-[30vw] md:w-full lg:w-[30vw] lg:px-0 lg:justify-center"
+        class="flex justify-start items-center mt-[30px] drop-shadow-lg w-[90vw] px-[30px] md:px-[30vw] md:w-full lg:w-[30vw] lg:px-0 lg:justify-center slide-bottom"
       >
         <i
           class="fa-solid fa-location-dot ml-[15px] mr-[35px]"
@@ -128,7 +128,7 @@
         </div>
       </div>
       <div
-        class="flex justify-start items-center mt-[30px] drop-shadow-lg w-[90vw] p-[20px] md:px-[30vw] md:w-full lg:w-[30vw] lg:px-0 lg:justify-center"
+        class="flex justify-start items-center mt-[30px] drop-shadow-lg w-[90vw] p-[20px] md:px-[30vw] md:w-full lg:w-[30vw] lg:px-0 lg:justify-center slide-bottom"
       >
         <i
           class="fa-solid fa-phone ml-[15px] mr-[30px]"
@@ -147,7 +147,7 @@
       <div
         class="bg-[url(/images/1000x650-132.jpg)] h-[60vw] bg-cover rounded-t-[5px] lg:min-w-[40vw] lg:max-h-[700px] bg-center lg:rounded-tr-none lg:rounded-bl-[5px]"
       ></div>
-      <div>
+      <div class="slide-bottom">
         <p
           class="mt-[10px] text-[24px] font-bold px-[20px] text-[#666] md:text-[45px]"
         >
@@ -174,32 +174,40 @@
     <section class="mt-[50px]">
       <h1 class="font-bold text-center text-[60px] mb-[30px]">Gallery</h1>
       <div class="md:flex">
-        <div
-          class="bg-[url(/images/Kayaking-1.jpg)] h-[60vw] bg-cover md:min-w-[60vw] md:bg-center lg:min-w-[50vw] lg:h-[40vw]"
-        ></div>
-        <div class="p-[20px] text-center">
-          <h1 class="md:text-left lg:text-[5vw] font-bold">
-            Serenity on the Water: The Ultimate Kayak Escape
-          </h1>
-          <p class="md:text-left lg:text-[2vw]">
-            Glide over the pristine turquoise waters, let nature’s tranquility
-            embrace you, and escape from the mundane. Your peaceful getaway
-            awaits.
-          </p>
+        <div>
+          <div
+            class="bg-[url(/images/Kayaking-1.jpg)] h-[60vw] bg-cover md:min-w-[60vw] md:bg-center lg:min-w-[50vw] lg:h-[40vw] slide-left"
+          ></div>
+        </div>
+        <div>
+          <div class="p-[20px] text-center slide-right">
+            <h1 class="md:text-left lg:text-[5vw] font-bold">
+              Serenity on the Water: The Ultimate Kayak Escape
+            </h1>
+            <p class="md:text-left lg:text-[2vw]">
+              Glide over the pristine turquoise waters, let nature’s tranquility
+              embrace you, and escape from the mundane. Your peaceful getaway
+              awaits.
+            </p>
+          </div>
         </div>
       </div>
       <div class="md:flex md:flex-row-reverse">
-        <div
-          class="bg-[url(/images/21db62_7054fbd3046a47658a73d5af7803084emv2.webp)] h-[60vw] bg-cover md:min-w-[60vw] md:bg-center lg:min-w-[50vw] lg:h-[40vw]"
-        ></div>
-        <div class="p-[20px] text-center">
-          <h1 class="md:text-right lg:text-[5vw] font-bold">
-            Group Thrills on the Waves: Unforgettable Moments Await!
-          </h1>
-          <p class="md:text-right lg:text-[2vw]">
-            Whether with family or friends, experience the exhilarating rush
-            together. Laughter, splashes, and shared memories guaranteed.
-          </p>
+        <div>
+          <div
+            class="bg-[url(/images/21db62_7054fbd3046a47658a73d5af7803084emv2.webp)] h-[60vw] bg-cover md:min-w-[60vw] md:bg-center lg:min-w-[50vw] lg:h-[40vw] slide-right"
+          ></div>
+        </div>
+        <div>
+          <div class="p-[20px] text-center slide-left">
+            <h1 class="md:text-right lg:text-[5vw] font-bold">
+              Group Thrills on the Waves: Unforgettable Moments Await!
+            </h1>
+            <p class="md:text-right lg:text-[2vw]">
+              Whether with family or friends, experience the exhilarating rush
+              together. Laughter, splashes, and shared memories guaranteed.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -322,6 +330,7 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script src="js/jquery.fadethis.min.js"></script>
     <script src="bundle.js"></script>
     <script type="text/javascript">
       (function ($) {
@@ -347,6 +356,8 @@
             e.stopPropagation();
           }
         });
+
+        $(window).fadeThis();
       })(jQuery);
     </script>
   </body>
